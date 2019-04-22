@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="KOPET 2019">
+    <meta property="og:url" content="http://www.kopet.com/">
+    <meta property="og:image" content="/register/2019_spring/images/kopet_logo_01.png">
+    <title>코리아펫쇼</title>
+    <link rel="icon" href="favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/regular.css" integrity="sha384-FKw7x8fCxuvzBwOJmhTJJsKzBl8dnN9e2R4+pXRfYoHivikuHkzWyhKWDSMcGNK8" crossorigin="anonymous">
+    
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+        background-image: radial-gradient(circle, rgb(223, 241, 225), rgb(174, 206, 177),#69996D);
+    }
+    .container-fluid {
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        top: 48%;
+        transform: translateY(-50%);
+    }
+    .top-con, .btn-con {
+        text-align: center;
+    }
+    .main_poster {
+        margin: 0;
+        width: 35vh;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .btn p {
+        vertical-align: middle;
+        line-height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    @media (max-width:424.98px) {
+        .main_poster {
+            width: 100vw;
+        }
+        .btn {
+            height: 20vh;
+            width: 37.25vw;
+            margin: 5vw 1vh;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 5px;
+        }
+        .btn p {
+            line-height: 1.5rem;
+            vertical-align: middle;
+        }
+        .figure_graph {
+            font-size: 2.25rem;
+        }
+    }
+    @media (min-width:425px) and (max-width:767.98px) {
+        .container-fluid {
+            position: relative;
+        }
+        .main_poster {
+            width: 95vw;
+        }
+        .btn {
+            height: 35vh;
+            width: 37.25vh;
+            margin: 5vh 1vh;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 5px;
+        }
+        .btn p {
+            line-height: 1rem;
+            vertical-align: middle;
+        }
+        .figure_graph {
+            font-size: 2rem;
+        }
+    }
+    @media (min-width:768px) and (max-width: 1023.98px) {
+        .container-fluid {
+            position: relative;
+        }
+        .main_poster {
+            width: 80vw;
+        }
+        .btn {
+            height: 20vh;
+            width: 30vh;
+            margin: 5vh 1.25vh;
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .btn p {
+            line-height: 3rem;
+            vertical-align: middle;
+        }
+        .figure_graph {
+            font-size: 3.5rem;
+        }
+    }
+    @media (min-width: 1024px) {
+        .main_poster {
+            width: 90vw;
+        }
+        .btn {
+            height: 22.25vw;
+            width: 37.25vw;
+            margin: 5vh 1.25vh;
+            font-size: 3.25rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .btn p {
+            line-height: 5rem;
+            vertical-align: middle;
+        }
+        .figure_graph {
+            margin-top: 0;
+            font-size: 3.25rem;
+        }
+    }
+    
+    </style>
+</head>
+    <body>
+<div class="container-fluid">
+    <div class="top-con">
+        <img class="main_poster" src="poster_2019.png">
+    </div>
+    <div class="btn-con">
+        <!-- 일반 참관객 설문지 링크 주소 -->
+        <a href="http://www.naver.com">
+            <button type="button" class="btn btn-info btn-left btn-lg">
+                <span class="figure_graph">
+                    <i class="fas fa-user"></i>
+                </span>
+                <p>일반 참관객</p>
+            </button>
+        </a>
+        <!-- 산업종사자 설문지 링크 주소 -->
+        <a href="http://www.kopet.com">
+            <button type="button" class="btn btn-info btn-right btn-lg">
+                <span class="figure_graph">
+                        <i class="fas fa-user-tie"></i>
+                </span>
+                <p>산업 종사자</p>
+            </button>
+        </a>
+    </div>
+</div>
+<script>
+    var spinner = document.getElementsByClassName("top-con")[0];
+    spinner.style.display = "block";
+    document.addEventListener("DOMContentLoaded", function(event) {
+        spinner.style.display = "block";
+    });
+</script>
+    </body>
+</html>
